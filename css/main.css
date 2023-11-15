@@ -3,6 +3,7 @@ html {
   font-size: 1em;
   line-height: 1.4;
   background: #190b23;
+  background: linear-gradient(90deg, #0F194C, #190b23);
 }
 
 ::-moz-selection {
