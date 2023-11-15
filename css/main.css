@@ -70,44 +70,49 @@ hr {
 }
 
 .planet.mercury {
-  background: #888888
-  ;
+  background: #888888;
 }
 
 .planet.venus {
-  background: #E7CDCD
-  ;
+  width: 26px;
+  height: 26px;
+  background: #E7CDCD;
 }
 
 .planet.earth {
-  background: #428ED4
-  ;
+  width: 28px;
+  height: 28px;
+  background: #428ED4;
 }
 
 .planet.mars {
-  background: #EF5F5F
-  ;
+  width: 14px;
+  height: 14px;
+  background: #EF5F5F;
 }
 
 .planet.jupiter {
-  background: #E29468
-  ;
+  width: 188px;
+  height: 188px;
+  background: #E29468;
 }
 
 .planet.saturn {
-  background: #C7AA72
-  ;
+  width: 144px;
+  height: 144px;
+  background: #C7AA72;
 }
 
 .planet.uranus {
-  background: #C9D4F1
-
-  ;
+  width: 66px;
+  height: 66px;
+  background: #C9D4F1;
 }
 
 .planet.naptune {
-  background: #7A91A7
-  ;
+  width: 66px;
+  height: 66px;
+  background: #7A91A7;
 }
 
 
