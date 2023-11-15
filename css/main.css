@@ -60,12 +60,21 @@ hr {
 }
 
 .planet {
+  display: inline-flex;
+  flex-direction: row;
+  width: 14px;
+  height: 14px;
+  background: limegreen;
+  border-radius: 50%;
 }
 
-.planet-star {
+.planet.mercury {
+  background: #888888
+  ;
 }
 
 .planet-description {
+  visibility: hidden;
 }
 
 .solaris-main footer {
