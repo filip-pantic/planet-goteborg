@@ -10,3 +10,9 @@ const listOfPlanets = [
   "Neptune",
   "Pluto",
 ];
+
+// API requests
+var main = function () {
+};
+
+document.addEventListener("DOMContentLoaded", main, false);
