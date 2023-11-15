@@ -73,6 +73,43 @@ hr {
   ;
 }
 
+.planet.venus {
+  background: #E7CDCD
+  ;
+}
+
+.planet.earth {
+  background: #428ED4
+  ;
+}
+
+.planet.mars {
+  background: #EF5F5F
+  ;
+}
+
+.planet.jupiter {
+  background: #E29468
+  ;
+}
+
+.planet.saturn {
+  background: #C7AA72
+  ;
+}
+
+.planet.uranus {
+  background: #C9D4F1
+
+  ;
+}
+
+.planet.naptune {
+  background: #7A91A7
+  ;
+}
+
+
 .planet-ring {
   /* display: block;
   width: 120%;
