@@ -73,6 +73,14 @@ hr {
   ;
 }
 
+.planet-ring {
+  /* display: block;
+  width: 120%;
+  height: 3px;
+  background: red; */
+}
+
+
 .planet-description {
   visibility: hidden;
 }
