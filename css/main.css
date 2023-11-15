@@ -70,9 +70,16 @@ hr {
   padding: 0;
   margin: 0;
   width: 14px;
+  position: relative;
   height: 14px;
   background: red;
   border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
 }
 
 .planet.mercury {
@@ -106,7 +113,17 @@ hr {
 .planet.saturn {
   width: 144px;
   height: 144px;
+  overflow: visible;
   background: #C7AA72;
+}
+
+.planet-ring {
+  width: 218px;
+  height: 5px;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0.4;
+  transform: rotate(-30deg);
 }
 
 .planet.uranus {
@@ -121,13 +138,6 @@ hr {
   background: #7A91A7;
 }
 
-
-.planet-ring {
-  /* display: block;
-  width: 120%;
-  height: 3px;
-  background: red; */
-}
 
 
 .planet-description {
