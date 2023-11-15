@@ -72,7 +72,6 @@ hr {
   width: 14px;
   position: relative;
   height: 14px;
-  background: red;
   border-radius: 50%;
   display: flex;
   flex-direction: column;
@@ -176,5 +175,7 @@ hr {
 }
 
 /* Display Overlay */
-.solaris-display_overlay {
+.solaris-details_overlay {
+  display: none;
+  visibility: none;
 }
