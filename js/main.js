@@ -1,3 +1,5 @@
+var baseUrl = "https://n5n3eiyjb0.execute-api.eu-north-1.amazonaws.com/";
+
 const listOfPlanets = [
   "Sun",
   "Mercury",
