@@ -272,5 +272,19 @@ hr {
   letter-spacing: 16%;
 }
 
-.info-satelites {
+.overlay-container button { 
+  padding: 3px 9px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: none;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
 }
+
+.overlay-container button:hover { 
+  background: #fff;
+  color: #000;
+}
+
+.info-satelites {}
