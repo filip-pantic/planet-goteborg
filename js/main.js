@@ -3,7 +3,8 @@ let requestKey = "";
 let planetAllData = null;
 
 const getCredentials = function () {
-  var myHeaders = new Headers();
+  let myHeaders = new Headers();
+  
   myHeaders.append("x-zocom", "solaris-1Cqgm3S6nlMechWO");
 
   var requestOptions = {
@@ -22,7 +23,9 @@ const getCredentials = function () {
 };
 
 const getPlanetDetails = function (event) {
-  myHeaders.append("x-zocom", "solaris-KwOi5vm2TYNmi8Dd");
+  let myHeaders = new Headers();
+  
+  myHeaders.append("x-zocom", requestKey);
 
   var requestOptions = {
     method: "GET",
