@@ -4,7 +4,7 @@ html {
   line-height: 1.15;
   background: #190b23;
   font-family: 'Roboto Condensed', sans-serif;
-  background: linear-gradient(90deg, #0F194C, #190b23);
+  /* background: linear-gradient(90deg, #0F194C, #190b23); */
 }
 
 html, body {
@@ -135,6 +135,17 @@ hr {
   border: 3px solid gold;
   animation: planetringscale 500ms linear forwards;
   border-radius: 50%;
+}
+
+.planet.sun {
+  
+  background: #FFD029;
+  width: 1278px;
+  position: absolute;
+  height: 1278px;
+  filter: drop-shadow(0 0 250px #FFD029);
+  left: 0;
+  transform: translateX(calc(-100% + 118px));
 }
 
 .planet.mercury {
