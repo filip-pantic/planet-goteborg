@@ -224,7 +224,8 @@ hr {
 
 .overlay-container {
   width: 640px;
-  margin: 101px auto 117px auto;
+  margin: 0 auto;
+  padding: 101px 0 117px 0;
 }
 
 .overlay-container h1 {

@@ -56,13 +56,17 @@ const showPlanetDetails = (event) => {
     }
   }
 
-  const detailsTitle = document.querySelector(".overlay-container h1");
-  const detailsTitleSub = document.querySelector(".overlay-container h2");
-  const detailsDescription = document.querySelector(".overlay-container p");
+  document.querySelector(".overlay-container h1").innerHTML = selectedPlanet.name;
+  document.querySelector(".overlay-container h2").innerHTML = selectedPlanet.latinName;
+  document.querySelector(".overlay-container p").innerHTML = selectedPlanet.desc;
 
-  detailsTitle.innerHTML = selectedPlanet.name;
-  detailsTitleSub.innerHTML = selectedPlanet.latinName;
-  detailsDescription.innerHTML = selectedPlanet.desc;
+
+  document.querySelector("#omkrets").innerHTML = selectedPlanet.circumference + ' km';
+  document.querySelector("#solen").innerHTML = selectedPlanet.distance + ' km';
+  document.querySelector("#mint").innerHTML = selectedPlanet.temp.night + ' °C';
+  document.querySelector("#maxt").innerHTML = selectedPlanet.temp.day + ' °C';
+
+  // console.log(selectedPlanet);
 };
 
 var main = function () {
@@ -78,3 +82,27 @@ var main = function () {
 };
 
 document.addEventListener("DOMContentLoaded", main, false);
+
+// {
+//   "id": 5,
+//   "type": "planet",
+//   "name": "Jupiter",
+//   "latinName": "Lovis",
+//   "rotation": 0.4,
+//   "circumference": 439264,
+//   "temp": {
+//       "day": -140,
+//       "night": -140
+//   },
+//   "distance": 750290000,
+//   "orbitalPeriod": 4324,
+//   "desc": "Jupiter är den femte planeten från solen och är med stor marginal solsystemets största planet. Dess massa är 2,5 gånger så stor som alla de andra planeternas sammanlagda massa. Planeten är en så kallad gasjätte och man är inte säker på om planeten ens har en fast kärna.",
+//   "moons": [
+//       "Europa",
+//       "Ganymedes",
+//       "Io",
+//       "Callisto",
+//       "Amalthea",
+//       "Himalia"
+//   ]
+// }
