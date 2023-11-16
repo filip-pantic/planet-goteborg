@@ -209,6 +209,17 @@ hr {
 
 /* Display Overlay */
 .solaris-details_overlay {
-  display: none;
-  visibility: none;
+  background: red;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.overlay-container {
+  width: 640px;
+  background: black;
+  margin: 101px auto 117px auto;
+}
 }
