@@ -197,10 +197,6 @@ hr {
   background: #7a91a7;
 }
 
-.planet-description {
-  visibility: hidden;
-}
-
 .solaris-main footer {
   position: absolute;
   bottom: 66px;
@@ -213,12 +209,13 @@ hr {
 
 /* Display Overlay */
 .solaris-details_overlay {
-  background: linear-gradient(90deg, #0C174D, #190C25);
+  background: linear-gradient(90deg, #0c174d, #190c25);
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+  z-index: 999;
 }
 
 .solaris-details_overlay.hidden {
@@ -281,7 +278,7 @@ hr {
   letter-spacing: 16%;
 }
 
-.overlay-container button { 
+.overlay-container button {
   padding: 3px 9px;
   border: 1px solid rgba(255, 255, 255, 0.5);
   background: none;
@@ -291,9 +288,10 @@ hr {
   cursor: pointer;
 }
 
-.overlay-container button:hover { 
+.overlay-container button:hover {
   background: #fff;
   color: #000;
 }
 
-.info-satelites {}
+.info-satelites {
+}

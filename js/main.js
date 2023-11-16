@@ -4,7 +4,7 @@ let planetAllData = null;
 
 const getCredentials = function () {
   let myHeaders = new Headers();
-  
+
   myHeaders.append("x-zocom", "solaris-1Cqgm3S6nlMechWO");
 
   var requestOptions = {
@@ -24,7 +24,7 @@ const getCredentials = function () {
 
 const getPlanetDetails = function (event) {
   let myHeaders = new Headers();
-  
+
   myHeaders.append("x-zocom", requestKey);
 
   var requestOptions = {
@@ -35,13 +35,21 @@ const getPlanetDetails = function (event) {
 
   fetch(baseUrl + "/bodies", requestOptions)
     .then((response) => response.json())
-    .then((result) => planetAllData = result.bodies)
+    .then((result) => (planetAllData = result.bodies))
     .catch((error) => console.log("error", error));
 };
 
-const showPlanetDetails = () => {
-  console.log('planetAllData', planetAllData)
-}
+const showPlanetDetails = (event) => {
+  document.querySelector(".solaris-details_overlay").classList.toggle("hidden");
+
+  console.log(
+    "eve",
+    event.target
+      ?.querySelector("span.planet-description")
+      ?.textContent?.toLowerCase(),
+    planetAllData
+  );
+};
 
 var main = function () {
   // Get key and Details
@@ -54,7 +62,5 @@ var main = function () {
     document.addEventListener("click", showPlanetDetails);
   }
 };
-
-// event.target?.querySelector("span.planet-description")?.textContent?.toLowerCase()
 
 document.addEventListener("DOMContentLoaded", main, false);
