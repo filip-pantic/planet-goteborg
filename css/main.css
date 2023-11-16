@@ -98,6 +98,7 @@ hr {
   flex-grow: 1;
   list-style: none;
   display: flex;
+  overflow: hidden;
   height: 100%;
   align-items: center;
   justify-content: space-between;
@@ -117,6 +118,10 @@ hr {
   cursor: pointer;
   aspect-ratio: 1/1;
   overflow: hidden;
+}
+
+.planet:hover {
+  opacity: 0.85;
 }
 
 #planet-container-sun {
@@ -217,7 +222,7 @@ hr {
 }
 
 .solaris-details_overlay.hidden {
-  visibility: none;
+  display: none;
 }
 
 .overlay-container {
