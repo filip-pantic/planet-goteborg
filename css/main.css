@@ -111,39 +111,13 @@ hr {
   cursor: pointer;
 }
 
-@keyframes planetringscale {
-  0% {
-    opacity: 1;
-    transform: scale(1);
-  }
-  50% {
-    opacity: 0.7;
-  }
-  90% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-    transform: scale(50);
-  }
-}
-
-.planet:hover::after {
-  position: absolute;
-  content: '';
-  z-index: -1;
-  border: 3px solid gold;
-  animation: planetringscale 500ms linear forwards;
-  border-radius: 50%;
-}
-
 .planet.sun {
-  
   background: #FFD029;
   width: 1278px;
   position: absolute;
   height: 1278px;
-  filter: drop-shadow(0 0 250px #FFD029);
+  /* filter: drop-shadow(0 0 250px #FFD029); */
+  box-shadow: 0 0 250px #FFD029;
   left: 0;
   transform: translateX(calc(-100% + 118px));
 }
