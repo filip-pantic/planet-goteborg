@@ -3,11 +3,12 @@ html {
   font-size: 1em;
   line-height: 1.15;
   background: #190b23;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   /* background: linear-gradient(90deg, #0F194C, #190b23); */
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -58,7 +59,7 @@ hr {
 
 .solaris-main h1,
 .overlay-container h1 {
-  font-family: 'Secular One', sans-serif;
+  font-family: "Secular One", sans-serif;
   font-weight: 400;
   padding: 0;
   letter-spacing: 5px;
@@ -69,14 +70,14 @@ hr {
 
 .solaris-main h2,
 .overlay-container h2 {
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
   font-weight: 400;
   line-height: 1;
   text-transform: uppercase;
   padding: 0;
   margin: 0;
   letter-spacing: 12px;
-  color: #FFD029;
+  color: #ffd029;
   font-size: 24px;
 }
 
@@ -126,8 +127,8 @@ hr {
 
 .planet.sun {
   position: absolute;
-  background: #FFD029;
-  box-shadow: 0 0 250px #FFD029;
+  background: #ffd029;
+  box-shadow: 0 0 250px #ffd029;
   right: 0;
   height: 170%;
   top: -35%;
@@ -142,32 +143,32 @@ hr {
 .planet.venus {
   width: 26px;
   height: 26px;
-  background: #E7CDCD;
+  background: #e7cdcd;
 }
 
 .planet.earth {
   width: 28px;
   height: 28px;
-  background: #428ED4;
+  background: #428ed4;
 }
 
 .planet.mars {
   width: 14px;
   height: 14px;
-  background: #EF5F5F;
+  background: #ef5f5f;
 }
 
 .planet.jupiter {
   width: 188px;
   height: 188px;
-  background: #E29468;
+  background: #e29468;
 }
 
 .planet.saturn {
   width: 144px;
   height: 144px;
   overflow: visible;
-  background: #C7AA72;
+  background: #c7aa72;
 }
 
 .planet-ring {
@@ -182,16 +183,14 @@ hr {
 .planet.uranus {
   width: 66px;
   height: 66px;
-  background: #C9D4F1;
+  background: #c9d4f1;
 }
 
 .planet.neptune {
   width: 66px;
   height: 66px;
-  background: #7A91A7;
+  background: #7a91a7;
 }
-
-
 
 .planet-description {
   visibility: hidden;
@@ -209,7 +208,7 @@ hr {
 
 /* Display Overlay */
 .solaris-details_overlay {
-  background: red;
+  background: linear-gradient(90deg, #0C174D, #190C25);
   position: absolute;
   top: 0;
   left: 0;
@@ -219,11 +218,59 @@ hr {
 
 .overlay-container {
   width: 640px;
-  background: black;
   margin: 101px auto 117px auto;
 }
 
-.overlay-container h1 {}
+.overlay-container h1 {
+}
 
-.overlay-container h2 {}
+.overlay-container h2 {
+}
+
+.overlay-container p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 31px;
+}
+
+.info-stats {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.info-stats ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.info-stats li {
+  margin: 32px 0 32px 0;
+  padding: 0;
+  width: 50%;
+  display: flex;
+  flex-basis: calc(50%);
+  justify-content: center;
+  flex-direction: column;
+}
+
+.info-stats h3 {
+  margin: 0;
+  padding: 0;
+  font-family: "Secular One", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 9%;
+}
+
+.info-stats span {
+  font-size: 18px;
+  line-height: 31px;
+  letter-spacing: 16%;
+}
+
+.info-satelites {
 }
