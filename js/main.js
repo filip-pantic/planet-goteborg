@@ -56,15 +56,41 @@ const showPlanetDetails = (event) => {
     }
   }
 
-  document.querySelector(".overlay-container h1").innerHTML = selectedPlanet.name;
-  document.querySelector(".overlay-container h2").innerHTML = selectedPlanet.latinName;
-  document.querySelector(".overlay-container p").innerHTML = selectedPlanet.desc;
+  document.querySelector(".overlay-container h1").innerHTML =
+    selectedPlanet.name;
+  document.querySelector(".overlay-container h2").innerHTML =
+    selectedPlanet.latinName;
+  document.querySelector(".overlay-container p").innerHTML =
+    selectedPlanet.desc;
 
+  document.querySelector("#omkrets").innerHTML =
+    selectedPlanet.circumference + " km";
+  document.querySelector("#solen").innerHTML = selectedPlanet.distance + " km";
+  document.querySelector("#mint").innerHTML = selectedPlanet.temp.night + " °C";
+  document.querySelector("#maxt").innerHTML = selectedPlanet.temp.day + " °C";
 
-  document.querySelector("#omkrets").innerHTML = selectedPlanet.circumference + ' km';
-  document.querySelector("#solen").innerHTML = selectedPlanet.distance + ' km';
-  document.querySelector("#mint").innerHTML = selectedPlanet.temp.night + ' °C';
-  document.querySelector("#maxt").innerHTML = selectedPlanet.temp.day + ' °C';
+  const moonListRoot = document.querySelector(".info-satelites ul");
+  moonListRoot.innerHTML = "";
+
+  for (let index = 0; index < selectedPlanet.moons.length; index++) {
+    const moonName = selectedPlanet.moons[index];
+    const addLi = document.createElement("li");
+    const addH3 = document.createElement("h3");
+    addH3.innerHTML = moonName;
+    addLi.appendChild(addH3);
+    const addSpan = document.createElement("span");
+    addSpan.innerHTML = moonName;
+    addLi.appendChild(addSpan);
+    moonListRoot.appendChild(addLi);
+  }
+
+  /* 
+            <li>
+                <h3>OMKRETS</h3>
+                <span>40 075 km</span>
+              </li>
+  
+  */
 
   // console.log(selectedPlanet);
 };
