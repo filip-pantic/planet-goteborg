@@ -216,6 +216,10 @@ hr {
   bottom: 0;
 }
 
+.solaris-details_overlay.hidden {
+  visibility: none;
+}
+
 .overlay-container {
   width: 640px;
   margin: 101px auto 117px auto;
