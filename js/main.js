@@ -13,6 +13,8 @@ const listOfPlanets = [
 
 // API requests
 var main = function () {
+
+  console.log("filip");
 };
 
 document.addEventListener("DOMContentLoaded", main, false);
