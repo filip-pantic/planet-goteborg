@@ -40,15 +40,29 @@ const getPlanetDetails = function (event) {
 };
 
 const showPlanetDetails = (event) => {
+  const planetIndex = event.target?.getAttribute("data-index");
+  let selectedPlanet = null;
+
+  if (planetIndex === null) {
+    document.querySelector(".solaris-details_overlay").classList.add("hidden");
+    return null;
+  }
+
   document.querySelector(".solaris-details_overlay").classList.toggle("hidden");
 
-  console.log(
-    "eve",
-    event.target
-      ?.querySelector("span.planet-description")
-      ?.textContent?.toLowerCase(),
-    planetAllData
-  );
+  for (let i = 0; i < planetAllData.length; i++) {
+    if (planetAllData[i].id === Number(planetIndex)) {
+      selectedPlanet = planetAllData[i];
+    }
+  }
+
+  const detailsTitle = document.querySelector(".overlay-container h1");
+  const detailsTitleSub = document.querySelector(".overlay-container h2");
+  const detailsDescription = document.querySelector(".overlay-container p");
+
+  detailsTitle.innerHTML = selectedPlanet.name;
+  detailsTitleSub.innerHTML = selectedPlanet.latinName;
+  detailsDescription.innerHTML = selectedPlanet.desc;
 };
 
 var main = function () {
